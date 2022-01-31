@@ -1,0 +1,43 @@
+@tailwind base;
+
+body {
+    overflow-y: hidden;
+}
+
+@tailwind components;
+
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    @apply text-blue-gray-50;
+    @apply text-2xl;
+    user-select: none;
+}
+
+.RCP {
+    background-color: #2B333D;
+    width: 120px !important;
+    @apply rounded-full;
+}
+
+.RCP svg {
+    height: 120px !important;
+    width: 120px !important;
+}
+
+a.active .absolute {
+    @apply bg-primary;
+}
+
+a.active svg {
+    @apply stroke-primary;
+}
+
+@tailwind utilities;
